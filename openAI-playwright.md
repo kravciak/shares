@@ -1,7 +1,9 @@
 # Problem:
 
-I needed to generate installation test for every policy in playwright. Couple policies can't be started without extra settings.
-Since I am new to javascript I tried to use chatGPT to give me skeleton of the code. This is the best of 3 attempts, 2 of them went quite wrong.
+Kubewarden has 27 policies. I want to check they can all be installed in UI. Some policies can be started just by providing policy name, but some of them require extra settings.
+
+
+I decided to generate installation test for every policy in playwright. There is some basic examples on playwright web, but since I am new to javascript I tried to use chatGPT to give me skeleton of the code. This is the best of 3 attempts, 2 of them went quite wrong.
 
 ## Martin: Write playwright test
 
