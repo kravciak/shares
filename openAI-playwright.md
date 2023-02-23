@@ -1,3 +1,8 @@
+# Problem:
+
+I needed to generate installation test for every policy in playwright. Couple policies can't be started without extra settings.
+Since I am new to javascript I tried to use chatGPT to give me skeleton of the code. This is the best of 3 attempts, 2 of them went quite wrong.
+
 ## Martin: Write playwright test
 
 Sure, I'd be happy to help you write a Playwright test! Here's an example test that navigates to the Google homepage and performs a search for "Playwright":
