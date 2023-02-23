@@ -27,19 +27,6 @@ test('search on Google', async ({ page }) => {
 });
 ```
 
-This test uses the `test` and `expect` functions from Playwright's testing framework to define and run the test. It also uses the `page` object, which represents the browser tab, to navigate to the Google homepage, enter a search query, and verify that the search results contain the expected text.
-
-You can run this test by saving it to a file, for example `google.test.js`, and running the following command:
-
-```bash
-npx playwright test google.test.js
-```
-This will launch a new instance of Chromium, run the test, and report the results in the console. You can also run the test in other browsers like Firefox and WebKit by passing the `--browser` flag, for example:
-
-```bash
-npx playwright test --browser=firefox google.test.js
-```
-
 ## Martin: Write a loop in playwright that for every item on the list generates test. List is  Allow Privilege Escalation PSP, Allowed Fs Groups PSP, Allowed Proc Mount Types PSP, Apparmor PSP
 
 Sure, here's an example of how you could write a loop in Playwright to generate a test for each item on the list:
@@ -70,13 +57,6 @@ for (const item of items) {
 ```
 
 This code defines an array of `items` and then loops over each item to generate a test using Playwright's `test` function. Each test navigates to a hypothetical PSP page, clicks on the PSP item corresponding to the current iteration of the loop, and verifies that the item is selected by checking its CSS class.
-
-You can run this test by saving it to a file, for example `psp.test.js`, and running the following command:
-
-```bash
-npx playwright test psp.test.js
-```
-This will generate a separate test for each item in the `items` array, and run them all in sequence. You can modify the array to include any additional items you want to test.
 
 Note that this code assumes the presence of a hypothetical PSP page with items that can be selected by clicking on them. You may need to modify the code to work with your specific testing environment.
 
@@ -175,9 +155,6 @@ for (const item of items) {
 In this modified code, we've extracted the clicking of the PSP item and the clicking of the "More Info" button into separate functions: `clickPSPItem` and `clickMoreInfo`, respectively.
 
 We've also modified the test loop to call these functions instead of inline code. This makes the code more modular and easier to read.
-
-I hope this helps! Let me know if you have any further questions.
-
 
 ## Martin: Change hasAdditionalAction to the function name that would be called
 
